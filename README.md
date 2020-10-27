@@ -1,1 +1,3 @@
-# exams-qa
+# EXAMS: A Multi-subject High School Examinations Dataset for Cross-lingual and Multilingual Question Answering
+
+The data, models, and scripts will be avaible soon...
