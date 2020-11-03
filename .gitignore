@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Tensorboard
+runs/
+
+# Custom
+.vscode
+.idea
+.DS_Store
+scripts/data
+scripts/wiki

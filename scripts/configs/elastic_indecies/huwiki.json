@@ -1,0 +1,33 @@
+{
+   "mappings":{
+      "sentence":{
+         "dynamic":"false",
+         "properties":{
+            "docId":{
+               "type":"keyword"
+            },
+            "text":{
+               "analyzer":"hungarian",
+               "type":"text",
+               "fields":{
+                  "raw":{
+                     "type":"keyword"
+                  }
+               }
+            },
+            "title":{
+               "analyzer":"hungarian",
+               "type":"text",
+               "fields":{
+                  "raw":{
+                     "type":"keyword"
+                  }
+               }
+            },
+            "tags":{
+               "type":"keyword"
+            }
+         }
+      }
+   }
+}

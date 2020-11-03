@@ -1,0 +1,33 @@
+{
+   "mappings":{
+      "sentence":{
+         "dynamic":"false",
+         "properties":{
+            "docId":{
+               "type":"keyword"
+            },
+            "text":{
+               "analyzer":"vi_analyzer",
+               "type":"text",
+               "fields":{
+                  "raw":{
+                     "type":"keyword"
+                  }
+               }
+            },
+            "title":{
+               "analyzer":"vi_analyzer",
+               "type":"text",
+               "fields":{
+                  "raw":{
+                     "type":"keyword"
+                  }
+               }
+            },
+            "tags":{
+               "type":"keyword"
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,33 @@
+{
+   "mappings":{
+      "sentence":{
+         "dynamic":"false",
+         "properties":{
+            "docId":{
+               "type":"keyword"
+            },
+            "text":{
+               "analyzer":"arabic",
+               "type":"text",
+               "fields":{
+                  "raw":{
+                     "type":"keyword"
+                  }
+               }
+            },
+            "title":{
+               "analyzer":"arabic",
+               "type":"text",
+               "fields":{
+                  "raw":{
+                     "type":"keyword"
+                  }
+               }
+            },
+            "tags":{
+               "type":"keyword"
+            }
+         }
+      }
+   }
+}
