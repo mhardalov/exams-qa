@@ -14,8 +14,8 @@ Question Answering](http://arxiv.org/abs/)
 
 ## Dataset
 
-The data can be downloaded from here: (1) [Multilingual](https://github.com/mhardalov/exams-qa/data/exams/multilingual), 
-(2) [Cross-lingual](https://github.com/mhardalov/exams-qa/data/exams/cross-lingual)
+The data can be downloaded from here: (1) [Multilingual](data/exams/multilingual), 
+(2) [Cross-lingual](data/exams/cross-lingual)
 
 The two testbeds are described in the [paper](http://arxiv.org/abs/).
 The files are in `jsonl` format and follow the [ARC Dataset's](https://allenai.org/data/arc) structure.
@@ -87,7 +87,7 @@ Finally, in this setup the `test.jsonl` is the same one as in the `Multilignaul`
 ### Parallel Questions
 
 The EXAMS dataset contains `10,000` paralell questions, therefore we also provide the mappings between questions 
-in [jsonl format](https://github.com/mhardalov/exams-qa/data/exams/parallel_questions.jsonl). 
+in [jsonl format](data/exams/parallel_questions.jsonl). 
 Each row from the file contains a mapping from `question id` to a list of parallel ones in other languages.
 
 ## Training and Evaluation
@@ -104,7 +104,7 @@ When using EXAMS with `run_multiple_choice` one should use `--task_name exams`, 
 
 We use [HuggingFace's](https://github.com/huggingface/transformers) scripts for training the models, with slight modifications to allow for 3- to 5-way 
 multiple-choice questions. The python scripts are available under the
-[scripts/experiments](https://github.com/mhardalov/exams-qa/scripts/experiments) folder.
+[scripts/experiments](scripts/experiments) folder.
 
 Here is an example:
 
@@ -136,7 +136,7 @@ python ./scripts/experiments/run_multiple_choice.py \
 ### Evaluation 
 
 We provide an evaluation script that allows fine-grained evaluation on both subject, and language level. The script 
-is available at [scripts/evaluation/evaluate_exams.py](https://github.com/mhardalov/exams-qa/data/exams/multilingual/scripts/evaluation/evaluate_exams.py).
+is available at [scripts/evaluation/evaluate_exams.py](scripts/evaluation/evaluate_exams.py).
 
 Example usage:
 
@@ -149,7 +149,7 @@ The possible granularities that the scripts supports are: `language`, `subject`,
 (includes all other options). 
 
 A sample predictions file can be found here: 
-[sample_predictions.jsonl](https://github.com/mhardalov/exams-qa/scripts/evaluation/sample_predictions.jsonl).
+[sample_predictions.jsonl](scripts/evaluation/sample_predictions.jsonl).
 
 ### Predictions
 
@@ -174,7 +174,7 @@ python ./scripts/experiments/run_multiple_choice.py \
 ## Contexts
 
 The scripts used for downloading the Wikipedia articles, and context resolution can be in the 
-[scripts/dataset](https://github.com/mhardalov/exams-qa/scripts/dataset) folder.
+[scripts/dataset](scripts/dataset) folder.
 
 ## Baselines
 
