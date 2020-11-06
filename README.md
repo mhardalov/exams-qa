@@ -141,7 +141,11 @@ is available at [scripts/evaluation/evaluate_exams.py](scripts/evaluation/evalua
 Example usage:
 
 ```bash
-python evaluate_exams.py --predictions_path predictions.json --dataset_path dev.jsonl --granularity all --output_path results.json
+python evaluate_exams.py \
+    --predictions_path predictions.json \
+    --dataset_path dev.jsonl \
+    --granularity all \
+    --output_path results.json
 ```
 
 
