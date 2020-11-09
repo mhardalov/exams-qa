@@ -10,14 +10,14 @@ This repository contains links to the data, the models, and a set of scripts for
 
 For more details on how the dataset was created, and baseline models testing multilingual and cross-lingual transfer,
 please refer to our paper, [EXAMS: A Multi-subject High School Examinations Dataset for Cross-lingual and Multilingual 
-Question Answering](http://arxiv.org/abs/)
+Question Answering](https://arxiv.org/abs/2011.03080)
 
 ## Dataset
 
 The data can be downloaded from here: (1) [Multilingual](data/exams/multilingual), 
 (2) [Cross-lingual](data/exams/cross-lingual)
 
-The two testbeds are described in the [paper](http://arxiv.org/abs/).
+The two testbeds are described in the [paper](https://arxiv.org/abs/2011.03080).
 The files are in `jsonl` format and follow the [ARC Dataset's](https://allenai.org/data/arc) structure.
 Each file is named using the following pattern: `data/exams/{testbed}/{subset}.jsonl`
 
@@ -182,7 +182,7 @@ The scripts used for downloading the Wikipedia articles, and context resolution 
 
 ## Baselines
 
-The EXAMS [paper](http://arxiv.org/abs/) presents several baselines for zero-shot, and few-shot training using publicly 
+The EXAMS [paper](https://arxiv.org/abs/2011.03080) presents several baselines for zero-shot, and few-shot training using publicly 
 avaible multiple-choice datasets: RACE, ARC, OpenBookQA, Regents. 
 
 
@@ -203,7 +203,21 @@ avaible multiple-choice datasets: RACE, ARC, OpenBookQA, Regents.
 
 ## References
 
-Coming soon...
+Please cite as [[1]](https://arxiv.org/abs/2011.03080).
+
+
+[1] M. Hardalov, T. Mihaylov, D. Zlatkova, Y. Dinkov, I. Koychev, P. Nakov [*EXAMS: A Multi-subject High School Examinations Dataset for 
+Cross-lingual and Multilingual Question Answering*](http://arxiv.org/abs/2011.03080)
+
+
+```
+@article{hardalov2020exams,
+  title={EXAMS: A Multi-subject High School Examinations Dataset for Cross-lingual and Multilingual Question Answering},
+  author={Hardalov, Momchil and Mihaylov, Todor and Dimitrina Zlatkova and Yoan Dinkov and Ivan Koychev and Preslav Nvakov},
+  journal={arXiv preprint arXiv:2011.03080},
+  year={2020}
+}
+```
 
 ## License
 
