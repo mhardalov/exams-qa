@@ -10,14 +10,14 @@ This repository contains links to the data, the models, and a set of scripts for
 
 For more details on how the dataset was created, and baseline models testing multilingual and cross-lingual transfer,
 please refer to our paper, [EXAMS: A Multi-subject High School Examinations Dataset for Cross-lingual and Multilingual 
-Question Answering](https://arxiv.org/abs/2011.03080)
+Question Answering](https://www.aclweb.org/anthology/2020.emnlp-main.438/)
 
 ## Dataset
 
 The data can be downloaded from here: (1) [Multilingual](data/exams/multilingual), 
 (2) [Cross-lingual](data/exams/cross-lingual)
 
-The two testbeds are described in the [paper](https://arxiv.org/abs/2011.03080).
+The two testbeds are described in the [paper](https://www.aclweb.org/anthology/2020.emnlp-main.438/) (also on [arXiv](https://arxiv.org/abs/2011.03080)).
 The files are in `jsonl` format and follow the [ARC Dataset's](https://allenai.org/data/arc) structure.
 Each file is named using the following pattern: `data/exams/{testbed}/{subset}.jsonl`
 
@@ -89,6 +89,11 @@ Finally, in this setup the `test.jsonl` is the same one as in the `Multilignaul`
 The EXAMS dataset contains `10,000` paralell questions, therefore we also provide the mappings between questions 
 in [jsonl format](data/exams/parallel_questions.jsonl). 
 Each row from the file contains a mapping from `question id` to a list of parallel ones in other languages.
+
+### Resolved Hits
+
+We also release the resolved hits from the ElasticSearch including links to the Wikipedia pages, titles, and the returned relevance scores from the engine.
+The hits are avaible in a [tar.gz](data/exams/resolved_hits.tar.gz) archive containing a `jsonl` with the aforementioned fields.
 
 ## Training and Evaluation
 
@@ -203,22 +208,34 @@ avaible multiple-choice datasets: RACE, ARC, OpenBookQA, Regents.
 
 ## References
 
-Please cite as [[1]](https://arxiv.org/abs/2011.03080).
+Please cite as [[1]](https://www.aclweb.org/anthology/2020.emnlp-main.438/). There is also a [arXiv version](https://arxiv.org/abs/2011.03080).
 
 
-[1] M. Hardalov, T. Mihaylov, D. Zlatkova, Y. Dinkov, I. Koychev, P. Nakov [*EXAMS: A Multi-subject High School Examinations Dataset for 
-Cross-lingual and Multilingual Question Answering*](http://arxiv.org/abs/2011.03080)
+[1] M. Hardalov, T. Mihaylov, D. Zlatkova, Y. Dinkov, I. Koychev, P. Nakov ["*EXAMS: A Multi-subject High School Examinations Dataset for 
+Cross-lingual and Multilingual Question Answering"*](https://www.aclweb.org/anthology/2020.emnlp-main.438/), Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP). 2020.
 
 
 ```
-@article{hardalov2020exams,
-  title={EXAMS: A Multi-subject High School Examinations Dataset for Cross-lingual and Multilingual Question Answering},
-  author={Hardalov, Momchil and Mihaylov, Todor and Dimitrina Zlatkova and Yoan Dinkov and Ivan Koychev and Preslav Nvakov},
-  journal={arXiv preprint arXiv:2011.03080},
-  year={2020}
+@inproceedings{hardalov-etal-2020-exams,
+    title = "{EXAMS}: A Multi-subject High School Examinations Dataset for Cross-lingual and Multilingual Question Answering",
+    author = "Hardalov, Momchil  and
+      Mihaylov, Todor  and
+      Zlatkova, Dimitrina  and
+      Dinkov, Yoan  and
+      Koychev, Ivan  and
+      Nakov, Preslav",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing",
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.emnlp-main.438",
+    pages = "5427--5444",
+    series = "EMNLP~'20"
 }
 ```
 
 ## License
 
 The dataset, which contains paragraphs from Wikipedia, is licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode). The code in this repository is licenced according the LICENSE file. 
+
+The rest of the repositorty is Licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
