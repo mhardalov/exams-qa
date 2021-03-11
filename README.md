@@ -236,6 +236,4 @@ Cross-lingual and Multilingual Question Answering"*](https://www.aclweb.org/anth
 
 ## License
 
-The dataset, which contains paragraphs from Wikipedia, is licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode). The code in this repository is licenced according the LICENSE file. 
-
-The rest of the repositorty is Licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
+The dataset, which contains paragraphs from Wikipedia, is licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode). The code in this repository is licenced under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
